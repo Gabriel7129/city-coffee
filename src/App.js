@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// local imports
+import Care from "./views/Care";
+import Footer from "./views/Footer";
+import Hero from "./views/Hero";
+import Products from "./views/Products";
+import Reference from "./views/Reference";
+import Services from "./views/Services";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <Services />
+      <Products />
+      <Reference />
+      <Care />
+      <Footer />
+    </>
   );
 }
 
